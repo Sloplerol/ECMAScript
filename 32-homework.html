@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.字符串长度
+        var str = 'hhhsdkakdmvmjfas22998';
+        console.log(str.length);
+        // 2.取出指定位置的字符
+        var str3 = 'a,d,d,d,a,b,d,t,e';
+        var arr3 = str3.split(',');
+        for (var j = 0;j<arr3.length;j++) {
+            if (arr3[j]=='d') {
+                console.log(j);
+            }
+        }
+        
+        // 3.查找是否存在
+        
+        if(str.indexOf('a')) {
+            console.log('存在');
+        }else {
+            console.log(('不存在'));
+        }
+        //replace
+        while(str.indexOf('2')!==-1) {
+            str = str.replace('2','b')
+        }
+        console.log(str);
+        //substr
+        var str1 = 'jwidkanxssv';
+        console.log(str1.substr(0,4));
+        //找出最大出现次数及对应的元素
+        var str2 = 'cnaksnxewjfoq';
+        var obj = {};
+        for (var i = 0;i<str2.length;i++) {
+            var chars = str2.charAt(i);
+            if (obj[chars]) {
+                obj[chars]++;
+            }else {
+                obj[chars] = 1;
+            }
+        }
+        var max = 0;
+        var ch = '';
+        for (var k in obj) {
+            if (obj[k]>max) {
+                max = obj[k];
+                ch = k;
+            }
+        }
+        console.log(ch+':'+max);
+    </script>
+</body>
+</html>

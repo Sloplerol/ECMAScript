@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var money = 0;
+
+        while(1) {
+
+            var choice = prompt('请输入选项'+'\n'+'1.存钱'+'\n'+'2.取钱'+'\n'+'3.查看当前余额'+'\n'+'4.exit')
+
+            if(choice>0 && choice<4) {
+
+                switch(choice) {
+
+                    case '1':
+                        var inmoney = prompt('请输入你想存入钱的数量');
+                        money+=parseFloat(inmoney);
+                        break;
+
+                    case '2':
+                        var outmoney = prompt('请输入你想取出的钱');
+                        money-=parseFloat(outmoney);
+                        break;
+
+                    case '3':
+                        alert('你当前的金额为'+money);
+                        break;
+
+                }
+            }else if(choice==4) {
+
+                alert('欢迎下次再来');
+                break;
+
+            }else {
+                alert('输入格式不正确请重新输入num型');
+            }
+        }
+    </script>
+</body>
+</html>

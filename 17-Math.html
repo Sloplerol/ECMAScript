@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象封装数学模型
+        // var obj = {
+        //     PI: 3.14,
+        //     max: function(){
+        //         var max = arguments[0];
+        //         for(var i = 1;i<arguments.length;i++) {
+        //             if(max<arguments[i]) {
+        //                 max = arguments[i];
+        //             }
+        //         }
+        //         return max;
+        //     }, 
+        //     min: function(){
+        //         var min = arguments[0];
+        //         for(var i = 1;i<arguments.length;i++) {
+        //             if(min>arguments[i]) {
+        //                 min = arguments[i];
+        //             }
+        //         }
+        //         return min;
+        //     } 
+            
+        // }
+        // console.log(obj.max(1,2,3,4,5));
+        // console.log(obj.min(1,2,3,45));
+        // 绝对值
+        console.log(Math.abs(-1));
+        console.log(Math.abs('asdjw'));
+        // NaN
+        // 向下取整
+        console.log(Math.floor(1.1));
+        // 向上取整
+        console.log(Math.ceil(1.1));
+        // 四舍五入往大了取
+        console.log(Math.round(1.5));
+        console.log(Math.round(-1.5));
+        // 随机取0到1之间左闭右开的数
+        console.log(Math.random());
+        //随机取两个数之间的整数且包含这两个数
+        function getRandom(min,max) {
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        console.log(getRandom(1,10));
+        var arr = ['a','b','c','d'];
+        console.log(arr[getRandom(0,arr.length-1)]);
+    </script>
+</body>
+</html>

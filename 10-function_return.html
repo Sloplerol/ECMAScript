@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        // function Add() {
+        //     return 4444;
+        // }
+        // console.log(Add());
+        // function getMax(num1,num2) {
+        //     return num1>num2 ? num1 : num2;
+
+        // }
+        // console.log(getMax(1,4));
+        // function arr_max(arr) {
+        //     var max = arr[0];
+        //     for (var i=0;i<=arr.length-1;i++) {
+        //         if (max<arr[i]) {
+        //             max = arr[i]
+        //         }
+        //     }
+        //     return max;
+        // }
+        // return只返回一个值
+        // 想返回多个值放数组里就行
+        // console.log(arr_max([1,2,3,4,5]));
+        // function calculate(num1,num2) {
+        //     return [num1+num2,num1-num2,num1*num2,num1/num2]
+        // }
+        // console.log(calculate(10,10));
+        
+        // function getMax(num1,num2,num3) {
+        //     if (num1>num2 && num1>num3) {
+        //         return num1;
+        //     }else if (num2>num1 && num2>num3) {
+        //         return num2;
+        //     }else if (num3>num1 && num3>num2) {
+        //         return num3;
+        //     }
+        // }
+        // console.log(getMax(1,2,3));
+//         function isPrime(num) {
+// 	    var isPrime = true;
+// 	    for (var i = 2; i < num; i++) {
+// 		if (num % i === 0) {
+// 			isPrime = false;
+// 			break;
+// 		}
+// 	}
+// 	if (isPrime) {
+// 		console.log(num + '是质数');
+// 	} else {
+// 		console.log(num + '不是质数');
+// 	}
+// }
+// isPrime(12);
+    var word = prompt('输入你想输入的数字');
+    var num1 = parseFloat(word);
+    function isprime(num) {
+        for (var i = 2;i<num;i++) {
+            if(num%i==0) {
+                break;
+            }
+        }
+        if(num==i) {
+            return num+'是素数';
+        }else {
+            return num+'不是素数';
+        }
+    
+    }
+    alert(isprime(num1));
+    </script>
+</body>
+</html>

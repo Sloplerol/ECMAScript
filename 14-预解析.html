@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(num);
+        var num = 10;
+        // 变量提升将声明提升到最前面
+        fun();
+        var fun = function myfuc(){
+            console.log(123);
+        }
+        变量提升为:
+        var fun
+        fun();
+        // 此时没有函数
+        fun = function myfuc(){
+            console.log(123);
+        }
+        // 函数提升将函数声明提升到最前面
+        // 直接赋值相当于全局变量
+        fn();
+        function fn(){
+            console.log(123);
+        }
+    </script>
+</body>
+</html>

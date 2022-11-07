@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['a','b','c','d'];
+        console.log(arr.indexOf('a'));
+        console.log(arr.indexOf('e'));
+        // 找不到返回-1
+        var arr1 = ['a','b','c','a'];
+        console.log(arr1.lastIndexOf('a'));
+        // lastindexOf从后面查找返回时3
+        var arr2 = '我向佛祖许愿佛说';
+        console.log(arr2.indexOf('佛',3));
+    </script>
+</body>
+</html>

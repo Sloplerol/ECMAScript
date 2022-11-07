@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function del_similar(arr) {
+            if (arr instanceof Array) {
+                var newarr = [];
+                for(var i = 0;i<arr.length;i++) {
+                    if(newarr.indexOf(arr[i]) == -1) {
+                        newarr.push(arr[i]);
+                    }
+                }
+                return newarr;
+            }else {
+                return '请输入数组';
+            }
+        }
+        console.log(del_similar([1,2,3,4,5,1,5])); 
+
+    </script>
+    
+</body>
+</html>

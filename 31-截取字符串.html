@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'abcdefg';
+        console.log(str.substr(2,2));
+        // 第一个是索引起始位置第二个是截取几个
+        var str1 = 'aaaaabbbbbbcccc';
+        console.log(str1.replace('a','b'));
+        while(str1.indexOf('a')!==-1) {
+            str1 = str1.replace('a','*');
+        }
+        console.log(str1);
+        var str2 = 'a,b,c,d';
+        // split将字符串转化为数组
+        console.log(str2.split(','));
+        // 通过什么符号将其分为多个数组
+        var str3 = 'abcdefg';
+        console.log(str3.toUpperCase());
+    </script>
+</body>
+</html>

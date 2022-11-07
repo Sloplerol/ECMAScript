@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isNumber(min,max){
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        var guess = isNumber(1,10);
+        while(1) {
+            var input = prompt('请输入1到10以内的数字');
+            if (input==886) {
+                alert('恭喜你结束了循环游戏');
+                break;
+            }else if(input<guess) {
+                alert('小了');
+            }else if(input==guess) {
+                alert('猜对了,实则并没有');
+                var guess = isNumber(1,5);
+                alert('你总共有三次机会,好好珍惜我觉得你能赢');
+                for(var i = 1;i<=3;i++) {
+                    
+                    var input1 = prompt('请输入6到9以内的数');
+                    if(input1==7) {
+                        alert('触发彩蛋,请依次输入你的信息,马上揭晓答案');
+                        var rname = prompt('name?')
+                        var age = prompt('age?');
+                        var occupation = prompt('occupation?')
+                        function th_exposide(rname,age,occupation){
+                            this.rname = rname;
+                            this.age = age;
+                            this.occupation = occupation;
+                        }
+                        var yourdata = new th_exposide(rname,age,occupation);
+                        alert('The yourname object has recored your data');
+                        alert('here is it'+'\n'+'name:'+yourdata['rname']+'\n'+'age:'+yourdata['age']+'\n'+'occupation:'+yourdata['occupation']);
+                        alert('有被骗到没有');
+
+                    }else if(input1>=1 || input1<=5){
+                        alert('恭喜你,进入正确题目');
+                        while(1) {
+                            var input2 = prompt('请输入一个1到5以内到数字');
+                            if (input2>guess) {
+                                alert('大了');
+                            }else if (input2<guess) {
+                                alert('小了')
+                            }else {
+                                alert('猜对了回到最初的起点');
+                                break;
+                            }
+                        }
+                        break;
+                    }else if(input1>guess) {
+                        alert('大了');
+                    }else {
+                        alert('输入数字好吗');
+                    }
+                    
+                }alert('盲生你发现了华点');
+            }else if(input>guess) {
+                alert('大了');
+            }else {
+                alert('请输入数字');
+            }
+        }
+    </script>
+</body>
+</html>

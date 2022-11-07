@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'abcd';
+        console.log(str.length);
+        // str属于简单数据类型为什么可以调用复杂数据类型对象的方法呢
+        // 首先包装简单为复杂将abcd字符串变成new String('abcd')
+        // 然后将其存储到temp中
+        // 最后将temp的值给str并销毁temp
+        
+        var str1 = 'abc';
+        var str1 = 'cef';
+        console.log(str1);
+        // 字符串变的是空间的地址
+        // 不要反复的更改字符串或反复使用字符串会开辟很多空间很占内存
+    </script>
+</body>
+</html>

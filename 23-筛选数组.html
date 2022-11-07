@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4];
+        var newarr = [];
+        for(var i = 0;i<arr.length;i++) {
+            if(arr[i]<3) {
+                newarr.push(arr[i]);
+            }
+        }
+        
+        console.log(newarr);
+        // 翻转数组
+        var arr1 = [2,5,1,4,6];
+        arr1.reverse();
+        console.log(arr1);
+        // 冒泡排序
+        var arr2 = [1,2,13,5,7,77];
+        arr2.sort();
+        arr2.sort(function(a,b){
+            return a-b;
+        })
+        // 按照升序排列大小
+        // sort从第一位开始比大小
+        // 假如arr2 = [1,2,13,5,7];
+        // 排序完是[1,13,2,5,7]
+        console.log(arr2);
+    </script>
+</body>
+</html>

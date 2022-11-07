@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        console.log(arr instanceof Array);
+        var obj = {};
+        console.log(obj instanceof Object);
+        console.log(Array.isArray(arr));
+        var arr2 = [1,2,3];
+        // 在数组后面添加
+        var arr2_ = arr2.push(4);
+        // 在数组前面添加
+        arr2.unshift('phonk');
+        console.log(arr2);
+        // arr2_是新数组的长度
+        console.log(arr2_);
+        arr3 = [1,2,3,4,5];
+        console.log(arr3.pop());
+        // 返回的是删除的元素
+        console.log(arr3);
+        // 返回删除最后一个元素之后的数组
+        arr4 = [1,2,3,4,5];
+        // 删除第一个元素
+        console.log(arr4.shift());
+        console.log(arr4);
+        
+    </script>
+</body>
+</html>
